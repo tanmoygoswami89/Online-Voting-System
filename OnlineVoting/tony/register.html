@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    #address {
+        width: 50%;
+    }
+
+    #image {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 50%;
+    }
+    #dropbox{
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #dropbox select{
+        border-radius: 5px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <center>
+    <div id="headersection" style="background-color: coral;">
+        <h1>Online Voting System</h1>
+    </div>
+    <hr><br><br>
+    <div id="bodysection" style="background-color: cadetblue; width: 50%; height: 70%; border-radius: 10px;">
+        <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+            <h2 style="padding-top: 15px; margin-top: 20px;">Registration</h2><br><br>
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="number" name="mobile" placeholder="Enter Mobile" required><br><br>
+
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="password" name="cpassword" placeholder="Enter Confirm Password" required><br><br>
+
+            <input type="address" name="address" id="address" placeholder="Enter Address" required><br><br>
+            <center>
+                <div id="image">
+                    Uplode Image: <input type="file" name="photo" required>
+                </div>
+                <br>
+                <div id="dropbox">
+                    Select Role: <select name="role">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div>
+            </center><br>
+            <button id="loginbtn" name="registerbtn" style="width: 70px; height: 35px;">Register</button><br><br>
+            Already user? <a href="../login.html"><b style="text-decoration: none;">Login Here</b></a>
+        </form>
+    </div>
+</center>
+</body>
+
+</html>

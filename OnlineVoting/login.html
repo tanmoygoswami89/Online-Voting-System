@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" text="text/css" href="css/style.css">
+</head>
+<style>
+    #mobile{
+        width: 55%;
+    }
+    #password{
+        width: 55%;
+    }
+
+    #dropbox{
+    width: 55%;
+    height: 10%;
+    border: 1px solid black;
+}
+</style>
+
+<body class="log">
+    <center>
+    <div id="headersection" style="background-color: coral;">
+        <h1>Online Voting System</h1>
+    </div>
+    <hr><br><br>
+    <div id="bodysection" style="background-color: cadetblue; width: 30%; height: 45%; border-radius: 10px;">
+        <form action="api/login.php" method="POST">
+            <h2 style="padding-top: 15px; margin-top: 100px;">Login</h2><br><br>
+            <input id="mobile" type="number" name="mobile" placeholder="Enter Mobile" required><br><br>
+            <input id="password" type="password" name="password" placeholder="Enter Password" required><br><br>
+            <select name="role" id="dropbox">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br><br>
+            <button id="loginbtn" type="submit" style="width: 70px; height: 35px;">Login</button><br><br>
+            New User? <a href="tony/register.html"><b style="text-decoration: none;">Register Here</b></a>
+        </form>
+    </div>
+</center>
+</body>
+
+</html>

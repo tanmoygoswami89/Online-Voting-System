@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #b8e994;
+}
+
+
+#headersection{
+    padding: 15px;
+}
+
+#headersection h1{
+    font-family: cursive;
+}
+
+input{
+
+    padding: 10px;
+    border-radius: 5px;
+}
+#loginbtn{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#back{
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout{
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#profile{
+    background-color: white;
+    width: 20%;
+    padding: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+#group{
+    background-color: rgb(204, 219, 238);
+    width: 65%;
+    padding: 20px;
+    margin-right: 20px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#votebtn{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#voted{
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(8, 240, 85);
+    color: white;
+    border-radius: 5px;
+}
+
